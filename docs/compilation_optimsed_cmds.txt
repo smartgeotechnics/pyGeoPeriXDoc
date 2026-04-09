@@ -1,0 +1,15 @@
+make clean
+
+cmake .. \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_CXX_FLAGS="\
+  -O3 \
+  -march=armv8.5-a \
+  -mtune=native \
+  -ffast-math \
+  -funroll-loops \
+  -fstrict-aliasing \
+  -flto \
+  -DNDEBUG"
+
+make -j$(sysctl -n hw.ncpu)

@@ -1,0 +1,1 @@
+ Verification Test of GeoPeriX with H.Zhou et al. (2024). VT_3 with m = 3, h = 0.06m  and spacing = 0.02m. Stabilization constant = 0.01.Correction bond stabilization constant from 50MPa to 12MPa. Softening modulus is reduced to -1.6e5. 
