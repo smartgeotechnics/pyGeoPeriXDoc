@@ -69,7 +69,7 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url":  "https://github.com/smartgeomechanics/GeoPeriX",
+            "url":  "https://github.com/smartgeotechnics/GeoPeriX",
             "icon": "fa-brands fa-github",
         },
         {

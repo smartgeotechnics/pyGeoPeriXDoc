@@ -60,7 +60,7 @@ print(PyGeoPeriX.__version__)
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/smartgeomechanics/GeoPeriX.git
+git clone https://github.com/smartgeotechnics/GeoPeriX.git
 cd GeoPeriX
 ```
 
