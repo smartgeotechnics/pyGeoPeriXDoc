@@ -60,20 +60,36 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- HTML output ---------------------------------------------------------------
 
-html_theme = "furo"
+html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
-    "sidebar_hide_name": False,
-    "navigation_with_keys": True,
-    "top_of_page_button": "edit",
-    "light_css_variables": {
-        "color-brand-primary": "#2E5B8A",
-        "color-brand-content": "#2E5B8A",
+    "navbar_start":  ["navbar-logo"],
+    "navbar_center": ["navbar-nav"],
+    "navbar_end":    ["navbar-icon-links", "theme-switcher"],
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url":  "https://github.com/smartgeomechanics/GeoPeriX",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "PyPI",
+            "url":  "https://pypi.org/project/geoperix/",
+            "icon": "fa-brands fa-python",
+        },
+    ],
+    "logo": {
+        "text": f"GeoPeriX {release}",
     },
-    "dark_css_variables": {
-        "color-brand-primary": "#5B9BD5",
-        "color-brand-content": "#5B9BD5",
-    },
+    "primary_sidebar_end": ["indices.html"],
+    "secondary_sidebar_items": ["page-toc", "edit-this-page", "sourcelink"],
+    "show_toc_level": 2,
+    "navigation_depth": 3,
+    "show_nav_level": 1,
+    "footer_start": ["copyright"],
+    "footer_end":   ["sphinx-version"],
+    "pygments_light_style": "friendly",
+    "pygments_dark_style":  "monokai",
 }
 
 html_title = f"{project} {release} Documentation"
